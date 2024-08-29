@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    Delete Cerpen
+{% endblock page_title %}
+
+{% block contents %}
+    <h1>Delete Cerpen Confirmation</h1>
+    <p>Apakah Data Ini Ingin Di Hapus?:</p>
+    <h3>{{cerpen.judul}}</h3>
+    <p>{{cerpen.published}}</p>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-outline-primary">Ya</button>
+        <a class="btn btn-outline-danger" href="{% url 'cerpen:manage' %}" >Tidak</a>
+    </form>
+{% endblock contents %}

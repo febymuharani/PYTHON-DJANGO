@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{judul}}</title>
+</head>
+<body>
+    <h1>{{judul}}</h1>
+    <ul>
+        <li><a href="{% url "index" %}" title="">HOME</a></li>
+        <li><a href="{% url "blog:index" %}" title="">BLOG</a></li>
+        <li><a href="{% url "blog:category" %}" title="">CATEGORYPOST</a></li>
+        <li><a href="{% url "blog:single" %}" title="">SINGLEPOST</a></li>
+        <li><a href="{% url "blog:khusus" input="Otong" %}" title="">OTONG</a></li>
+        <li><a href="{% url "blog:khusus" input="Ucup" %}" title="">UCUP</a></li>
+    </ul>
+</body>
+</html>

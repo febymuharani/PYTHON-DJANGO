@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{page_title}}</title>
+</head>
+<body>
+    <h1>{{page_title}}</h1>
+    <h3>Login Sebagi {{user}}</h3>
+    <ul>
+        <li>
+            <a href="{% url 'blog:add' %}" >Add Artikel</a>
+        </li>
+        <li>
+            <a href="{% url 'blog:update' %}" >Update Artikel</a>
+        </li>
+    </ul>
+</body>
+</html>

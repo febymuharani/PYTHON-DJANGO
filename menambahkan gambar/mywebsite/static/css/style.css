@@ -1,0 +1,36 @@
+#banner{
+    width: 100%;
+}
+
+h1 {
+    color: blueviolet;
+    font-family: arial;
+}
+
+body {
+    background-color: pink;
+}
+
+nav ul {
+    background-color: bisque;
+    list-style-type: none;
+    margin: 0%;
+    overflow: hidden;
+    padding: 0%;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    color: brown;
+    display: block;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(208, 190, 218);
+}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{page_title}}
+{% endblock title %}
+
+{% block contents %}
+    <h1>{{page_title}}</h1>
+    <h2>Klik List Jika ingin melihat hasil</h2><a class="btn btn-primary" href="{% url 'blog:list' %}">List</a>
+    <h2>Klik Create jika ingin membuat</h2><a class="btn btn-danger" href="{% url 'blog:create' %}">Create</a>
+{% endblock contents %}

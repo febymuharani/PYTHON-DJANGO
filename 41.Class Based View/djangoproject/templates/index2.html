@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{heading}}</title>
+</head>
+<body>
+    <h1>{{heading}}</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Quod provident repudiandae totam quaerat? Mollitia nihil,
+       ipsa nulla saepe voluptatem quam pariatur ullam porro dolor. 
+       Dolor iusto voluptatum repellendus. Perferendis, facere?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">POST</button>
+    </form>
+</body>
+</html>

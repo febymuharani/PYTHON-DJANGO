@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    Home
+{% endblock page_title %}
+
+{% block contents %}
+    <h1>Home</h1>
+    <div class="row">
+        {% for cerpen in latest_cerpen_list %}
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title"><a class="text-dark" href="{% url 'cerpen:category' cerpen.kategori 1 %}" >{{cerpen.kategori}}</a></h5>
+                    <h6 class="card-subtitle mb-2 text-dark">{{cerpen.judul}}</h6>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{cerpen.published|date}}</h6>
+                    <p class="card-text">{{cerpen.isi|truncatewords:20}}</p>
+                    <a href="{% url 'cerpen:detail' cerpen.slug %}" class="card-link">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock contents %}

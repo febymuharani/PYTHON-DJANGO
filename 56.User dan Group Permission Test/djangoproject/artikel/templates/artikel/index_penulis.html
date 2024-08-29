@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{page_title}}</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="{% url 'index' %}" >Home</a>
+        </li>
+        <li>
+            <a href="{% url 'artikel:add' %}" >Add</a>
+        </li>
+        <li>
+            <a href="{% url 'artikel:add2' %}" >Add2</a>
+        </li>
+    </ul>
+    <h1>{{page_title}}</h1>
+
+    <h3>Selamat Datang {{user}}</h3>
+    <h3>Anda Adalah Penulis Di Data Ini</h3>
+    <h4>Silahkan Menulis</h4>
+    <p>Form Untuk Menambah Artikel</p>
+</body>
+</html>
